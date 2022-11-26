@@ -13,7 +13,7 @@ namespace ReajusteSalarial.Models.Employee
         public double sallary { get; set; }
         public int year { get; set; }
 
-
+        public double SallaryAdjustment(double sallary, double porcent);
 
     }
 }

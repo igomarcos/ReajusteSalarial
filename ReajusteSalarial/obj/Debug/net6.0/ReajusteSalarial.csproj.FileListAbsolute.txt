@@ -13,3 +13,18 @@ C:\Users\igo.marcos.da.silva\OneDrive - Avanade\AULAS FIAP\C#\DESAFIO2\ReajusteS
 C:\Users\igo.marcos.da.silva\OneDrive - Avanade\AULAS FIAP\C#\DESAFIO2\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.pdb
 C:\Users\igo.marcos.da.silva\OneDrive - Avanade\AULAS FIAP\C#\DESAFIO2\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.genruntimeconfig.cache
 C:\Users\igo.marcos.da.silva\OneDrive - Avanade\AULAS FIAP\C#\DESAFIO2\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ref\ReajusteSalarial.dll
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\bin\Debug\net6.0\ReajusteSalarial.exe
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\bin\Debug\net6.0\ReajusteSalarial.deps.json
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\bin\Debug\net6.0\ReajusteSalarial.runtimeconfig.json
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\bin\Debug\net6.0\ReajusteSalarial.dll
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\bin\Debug\net6.0\ReajusteSalarial.pdb
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.csproj.AssemblyReference.cache
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.AssemblyInfoInputs.cache
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.AssemblyInfo.cs
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.csproj.CoreCompileInputs.cache
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.dll
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\refint\ReajusteSalarial.dll
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.pdb
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ReajusteSalarial.genruntimeconfig.cache
+C:\Users\geowa\Source\Repos\ReajusteSalarial\ReajusteSalarial\obj\Debug\net6.0\ref\ReajusteSalarial.dll

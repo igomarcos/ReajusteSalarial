@@ -5,6 +5,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
+        Employee calculateSallary = new Employee();
         List<Employee> employees = new List<Employee>();
         EmployeeOld oldEmployees = new EmployeeOld();
 
@@ -34,8 +35,15 @@ internal class Program
                     Console.WriteLine("Digite o ano de contratação do funcionário:");
                     newEmployee.year = Convert.ToInt32(Console.ReadLine());
 
-                    if (newEmployee.year < 2023)
+                    Console.Clear();
+
+                    if (2022 - newEmployee.year >= 3)
                     {
+                        Console.WriteLine("Funcionário cadastrado com sucesso!");
+                        Console.WriteLine("Funcionário com +3 anos de empresa.");
+                        Console.Read();
+                        Console.Clear();
+  
                         employees.Add(newEmployee);
                         oldEmployees.lista.Add(new EmployeeOld()
                         {
@@ -44,15 +52,32 @@ internal class Program
                             year =newEmployee.year,
                             role = newEmployee.role
                         });
+
                     }
-                    else
+                    else if ((2022 - newEmployee.year <= 3) && (2022 - newEmployee.year >= 0))
                     {
+                        Console.WriteLine("Funcionário cadastrado com sucesso!");
+                        Console.WriteLine("Funcionário com menos de 3 anos de empresa.");
                         employees.Add(newEmployee);
                     }
 
-                    Console.WriteLine("funcionário cadastrado com sucesso!");
+                    if (newEmployee.sallary >= 7000 && (2022 - newEmployee.year) >= 3)
+                    {
+                        newEmployee.sallary = calculateSallary.SallaryAdjustment(newEmployee.sallary, 10);
+                        Console.WriteLine("O funcionário irá receber um aumento de 10%");
+                        Console.WriteLine($"Novo salário do funcionário: {newEmployee.sallary}");
+                    }
+                    else
+                    {
 
+                        Console.WriteLine("Funcionário com -3 anos na empresa");
+                        Console.WriteLine("Digite a porcentagem de aumento desejada:");
+                        double adjsutmentValue = double.Parse(Console.ReadLine());
+                        newEmployee.sallary = calculateSallary.SallaryAdjustment(newEmployee.sallary, adjsutmentValue);
+                        Console.WriteLine($"Novo salário do funcionário: {newEmployee.sallary}");
 
+                    }
+                     
                     break;
                 case "2":
                     foreach (var item in employees)
