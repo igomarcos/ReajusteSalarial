@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\igo.marcos.da.silva\\.nuget\\packages\\": {}
+    "C:\\Users\\geowa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\igo.marcos.da.silva\\OneDrive - Avanade\\AULAS FIAP\\C#\\DESAFIO2\\ReajusteSalarial\\ReajusteSalarial\\ReajusteSalarial.csproj",
+      "projectUniqueName": "C:\\Users\\geowa\\Source\\Repos\\ReajusteSalarial\\ReajusteSalarial\\ReajusteSalarial.csproj",
       "projectName": "ReajusteSalarial",
-      "projectPath": "C:\\Users\\igo.marcos.da.silva\\OneDrive - Avanade\\AULAS FIAP\\C#\\DESAFIO2\\ReajusteSalarial\\ReajusteSalarial\\ReajusteSalarial.csproj",
-      "packagesPath": "C:\\Users\\igo.marcos.da.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\igo.marcos.da.silva\\OneDrive - Avanade\\AULAS FIAP\\C#\\DESAFIO2\\ReajusteSalarial\\ReajusteSalarial\\obj\\",
+      "projectPath": "C:\\Users\\geowa\\Source\\Repos\\ReajusteSalarial\\ReajusteSalarial\\ReajusteSalarial.csproj",
+      "packagesPath": "C:\\Users\\geowa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\geowa\\Source\\Repos\\ReajusteSalarial\\ReajusteSalarial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\igo.marcos.da.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\geowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -14,17 +14,17 @@ namespace ReajusteSalarial.Models.Employee
         {
             
         }
-        public Employee(string name, double salary, int year, string roll )
+        public Employee(string name, double sallary, int year, string role)
         {
-            this.Name = name;
-            this.Salary = salary;
+            this.name = name;
+            this.sallary = sallary;
             this.year = year;
-            this.Roll = roll;
+            this.role = role;
         }
 
-        public string Roll { get; set; }
-        public double Salary { get; set; }
-        public string Name { get; set; }
+        public string role { get; set; }
+        public double sallary { get; set; }
+        public string name { get; set; }
         public int year { get; set; }
 
     }

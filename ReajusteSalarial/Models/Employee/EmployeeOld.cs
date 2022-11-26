@@ -11,7 +11,7 @@ namespace ReajusteSalarial.Models.Employee
         public List<Employee> lista  { get; set; }
         public EmployeeOld()
         {
-            this.Roll = "Old";
+            this.role = "Old";
             this.lista = new List<Employee>();
 
         }

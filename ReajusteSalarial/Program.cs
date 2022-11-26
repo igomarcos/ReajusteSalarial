@@ -8,8 +8,6 @@ internal class Program
         List<Employee> employees = new List<Employee>();
         EmployeeOld oldEmployees = new EmployeeOld();
 
-
-
         while (true)
         {
             string option;
@@ -25,31 +23,31 @@ internal class Program
             switch (option)
             {
                 case "1":
-                    Employee novofunc = new Employee();
+                    Employee newEmployee = new Employee();
                     
                     Console.WriteLine("Digite o nome do funcionário:");
-                    novofunc.Name = Console.ReadLine();
-                    Console.WriteLine("Digite o salário do funcionário:");
-                    novofunc.Salary = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Digite o ano de contratação do funcionário:");
-                    novofunc.year = Convert.ToInt32(Console.ReadLine());
+                    newEmployee.name = Console.ReadLine();
                     Console.WriteLine("Digite o cargo do funcionário:");
-                    novofunc.Roll = Console.ReadLine();
+                    newEmployee.role = Console.ReadLine();
+                    Console.WriteLine("Digite o salário do funcionário:");
+                    newEmployee.sallary = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Digite o ano de contratação do funcionário:");
+                    newEmployee.year = Convert.ToInt32(Console.ReadLine());
 
-                    if (novofunc.year < 2023)
+                    if (newEmployee.year < 2023)
                     {
-                        employees.Add(novofunc);
+                        employees.Add(newEmployee);
                         oldEmployees.lista.Add(new EmployeeOld()
                         {
-                            Name = novofunc.Name,
-                            Salary = novofunc.Salary,
-                            year = novofunc.year,
-                            Roll = novofunc.Roll
+                            name = newEmployee.name,
+                            sallary = newEmployee.sallary,
+                            year =newEmployee.year,
+                            role = newEmployee.role
                         });
                     }
                     else
                     {
-                        employees.Add(novofunc);
+                        employees.Add(newEmployee);
                     }
 
                     Console.WriteLine("funcionário cadastrado com sucesso!");
@@ -59,20 +57,20 @@ internal class Program
                 case "2":
                     foreach (var item in employees)
                     {
-                        Console.WriteLine("Nome: " + item.Name);
-                        Console.WriteLine("Salário: " + item.Salary);
+                        Console.WriteLine("Nome: " + item.name);
+                        Console.WriteLine("Salário: " + item.sallary);
                         Console.WriteLine("Ano de contratação: " + item.year);
-                        Console.WriteLine("Cargo: " + item.Roll);
+                        Console.WriteLine("Cargo: " + item.role);
                         Console.WriteLine("===========================================");
                     }
 
                     foreach (var item in oldEmployees.lista)
                     {
                         Console.WriteLine("==================== FUNCIONÁRIOS ANTIGOS =======================");
-                        Console.WriteLine("Nome: " + item.Name);
-                        Console.WriteLine("Salário: " + item.Salary);
+                        Console.WriteLine("Nome: " + item.name);
+                        Console.WriteLine("Salário: " + item.sallary);
                         Console.WriteLine("Ano de contratação: " + item.year);
-                        Console.WriteLine("Cargo: " + item.Roll);
+                        Console.WriteLine("Cargo: " + item.role);
                         Console.WriteLine("===========================================");
                     }
 
@@ -84,14 +82,6 @@ internal class Program
                     Console.WriteLine("Opção inválida");
                     break;
             }
-
-
-
-        }
-        
-        
-       
-        
-        
+        }      
     }
 }

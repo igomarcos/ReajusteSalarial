@@ -8,9 +8,9 @@ namespace ReajusteSalarial.Models.Employee
 {
     internal interface IEmployee
     {
-        public string Name { get; set; }
-        public string Roll { get; set; }
-        public double Salary { get; set; }
+        public string name { get; set; }
+        public string role { get; set; }
+        public double sallary { get; set; }
         public int year { get; set; }
 
 
