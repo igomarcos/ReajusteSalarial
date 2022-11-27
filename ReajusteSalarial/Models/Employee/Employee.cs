@@ -30,6 +30,7 @@ namespace ReajusteSalarial.Models.Employee
         public double SallaryAdjustment(double sallary, double porcent)
         {
             return sallary * (porcent / 100) + sallary;
+          
         }
     }
 }

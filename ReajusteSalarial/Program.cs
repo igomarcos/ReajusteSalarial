@@ -1,7 +1,8 @@
 ﻿using ReajusteSalarial.Models.Employee;
 using System;
+using System.Globalization;
 
-internal class Program
+public class Program
 {
     static void Main(string[] args)
     {
@@ -25,7 +26,7 @@ internal class Program
             {
                 case "1":
                     Employee newEmployee = new Employee();
-                    
+
                     Console.WriteLine("Digite o nome do funcionário:");
                     newEmployee.name = Console.ReadLine();
                     Console.WriteLine("Digite o cargo do funcionário:");
@@ -34,14 +35,12 @@ internal class Program
                     newEmployee.sallary = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Digite o ano de contratação do funcionário:");
                     newEmployee.year = Convert.ToInt32(Console.ReadLine());
-
                     Console.Clear();
 
                     if (2022 - newEmployee.year >= 3)
                     {
                         Console.WriteLine("Funcionário cadastrado com sucesso!");
                         Console.WriteLine("Funcionário com +3 anos de empresa.");
-                        Console.Read();
                         Console.Clear();
   
                         employees.Add(newEmployee);
@@ -56,26 +55,29 @@ internal class Program
                     }
                     else if ((2022 - newEmployee.year <= 3) && (2022 - newEmployee.year >= 0))
                     {
-                        Console.WriteLine("Funcionário cadastrado com sucesso!");
                         Console.WriteLine("Funcionário com menos de 3 anos de empresa.");
                         employees.Add(newEmployee);
                     }
 
-                    if (newEmployee.sallary >= 7000 && (2022 - newEmployee.year) >= 3)
+                    if (newEmployee.sallary > 7000 && (2022 - newEmployee.year) >= 3)
                     {
+
                         newEmployee.sallary = calculateSallary.SallaryAdjustment(newEmployee.sallary, 10);
+                        Console.WriteLine("Funcionário cadastrado com sucesso!");
                         Console.WriteLine("O funcionário irá receber um aumento de 10%");
-                        Console.WriteLine($"Novo salário do funcionário: {newEmployee.sallary}");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine($"Novo salário do funcionário: R$ {newEmployee.sallary:F2}");
+                        Console.ResetColor();
                     }
                     else
                     {
-
-                        Console.WriteLine("Funcionário com -3 anos na empresa");
-                        Console.WriteLine("Digite a porcentagem de aumento desejada:");
-                        double adjsutmentValue = double.Parse(Console.ReadLine());
-                        newEmployee.sallary = calculateSallary.SallaryAdjustment(newEmployee.sallary, adjsutmentValue);
-                        Console.WriteLine($"Novo salário do funcionário: {newEmployee.sallary}");
-
+                        Console.WriteLine("Funcionário cadastrado com sucesso!");
+                        Console.WriteLine("Reajuste de 10% não é válido! Digite a porcentagem de aumento desejada:");
+                        double adjustmentValue = double.Parse(Console.ReadLine());
+                        newEmployee.sallary = calculateSallary.SallaryAdjustment(newEmployee.sallary, adjustmentValue);
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine($"Novo salário do funcionário: R$ {newEmployee.sallary:F2}");
+                        Console.ResetColor();
                     }
                      
                     break;
@@ -88,17 +90,6 @@ internal class Program
                         Console.WriteLine("Cargo: " + item.role);
                         Console.WriteLine("===========================================");
                     }
-
-                    foreach (var item in oldEmployees.lista)
-                    {
-                        Console.WriteLine("==================== FUNCIONÁRIOS ANTIGOS =======================");
-                        Console.WriteLine("Nome: " + item.name);
-                        Console.WriteLine("Salário: " + item.sallary);
-                        Console.WriteLine("Ano de contratação: " + item.year);
-                        Console.WriteLine("Cargo: " + item.role);
-                        Console.WriteLine("===========================================");
-                    }
-
                     break;
                 case "3":
                     Environment.Exit(0);
@@ -110,3 +101,4 @@ internal class Program
         }      
     }
 }
+
