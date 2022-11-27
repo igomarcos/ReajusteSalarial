@@ -15,7 +15,7 @@
  
  - Você deverá criar classes para resolução do exercício;
  - Deverá usar interface e herança;
- - Para o exercício, que possui característica didática tenho uma sugestão para a Herança;<b>REGRAS</b>
+ - Para o exercício, que possui característica didática tenho uma sugestão para a Herança;
    - Classe Colaboradores
    - Classe Colaboradores > Antigos herda a Classe Colaboradores
 
