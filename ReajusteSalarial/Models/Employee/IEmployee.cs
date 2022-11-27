@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReajusteSalarial.Models.Employee
 {
-    internal interface IEmployee
+    public interface IEmployee
     {
         public string name { get; set; }
         public string role { get; set; }

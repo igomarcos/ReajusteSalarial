@@ -10,6 +10,7 @@ public class Program
         List<Employee> employees = new List<Employee>();
         EmployeeOld oldEmployees = new EmployeeOld();
 
+
         while (true)
         {
             string option;
@@ -85,7 +86,7 @@ public class Program
                     foreach (var item in employees)
                     {
                         Console.WriteLine("Nome: " + item.name);
-                        Console.WriteLine("Salário: " + item.sallary);
+                        Console.WriteLine("Salário R$: " + item.sallary.ToString("F2"));
                         Console.WriteLine("Ano de contratação: " + item.year);
                         Console.WriteLine("Cargo: " + item.role);
                         Console.WriteLine("===========================================");
