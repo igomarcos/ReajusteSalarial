@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace ReajusteSalarial.Models.Employee
 {
-    internal class Employee : IEmployee
+    public class Employee : IEmployee
     {
 
         public Employee()
